@@ -2,7 +2,7 @@
 
 <div align="center">
 
-# 📺 FlapStream
+# ![A preview of the BubbleFlap application](./favicon.png) FlapStream
 
 **The first BSC token livestreaming platform for [flap.sh](https://flap.sh) tokens.**
 
