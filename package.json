@@ -1,0 +1,12 @@
+{
+  "name": "flapstream",
+  "version": "1.0.0",
+  "description": "FlapStream — BSC token livestreaming platform for flap.sh tokens",
+  "main": "dist/app.cjs",
+  "scripts": {
+    "start": "node dist/app.cjs"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
