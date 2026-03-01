@@ -17,7 +17,7 @@ Live stream your token. Get gifted on-chain.
 </div>
 
 ---
-
+# ![A preview of the BubbleFlap application](./dist/60.png)# ![A preview of the BubbleFlap application](./dist/60.png)# ![A preview of the BubbleFlap application](./dist/60.png)# ![A preview of the BubbleFlap application](./dist/60.png)# ![A preview of the BubbleFlap application](./dist/60.png)
 ## What is FlapStream?
 
 FlapStream is a real-time livestreaming platform purpose-built for BSC token communities. Viewers send **real on-chain cryptocurrency gifts** directly to streamers — no wrappers, no vouchers, no intermediaries.
