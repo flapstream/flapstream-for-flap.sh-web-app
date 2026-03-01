@@ -67,27 +67,37 @@ All endpoints are open and require no authentication.
 
 | Method | Endpoint | Description |
 |---|---|---|
-| `GET` | `/live` | Currently live streams |
-| `GET` | `/streams` | All registered streams (paginated) |
+| `GET` | `/live` | Currently live streams with server timestamp |
+| `GET` | `/streams` | All registered streams (live + offline) |
 | `GET` | `/streams/all` | All streams without pagination |
 | `GET` | `/streams/:tokenAddress` | Stream info for a specific token |
-| `GET` | `/embed/:tokenAddress` | Embeddable player data for a token stream |
+| `GET` | `/embed/:tokenAddress` | Embeddable live badge data for a token |
 
 ### Users & Profiles
 
 | Method | Endpoint | Description |
 |---|---|---|
-| `GET` | `/profile/:address` | User profile by wallet address |
-| `GET` | `/wallet/:address` | Wallet info and stream key details |
-| `POST` | `/register` | Register a new streamer wallet |
-| `POST` | `/avatar/:address` | Upload avatar for a wallet address |
+| `GET` | `/profile/:address` | Full profile with Karma, followers, gift breakdown |
+| `GET` | `/wallet/:address` | Quick wallet lookup — username, avatar, live status |
+| `GET` | `/profile/:address/followers` | Public follower list for any wallet |
+| `POST` | `/register` | Create or update a streamer profile |
+| `POST` | `/avatar/:address` | Upload avatar (multipart/form-data, field: `avatar`) |
 
 ### Gifts
 
 | Method | Endpoint | Description |
 |---|---|---|
-| `GET` | `/gifts/recent` | Last 20 gifts across the platform |
+| `GET` | `/gifts/recent` | Last 20 gifts across the platform with Karma values |
 | `GET` | `/gifts/:tokenAddress` | Last 50 gifts for a specific token's stream |
+
+### Leaderboard & Discovery
+
+| Method | Endpoint | Description |
+|---|---|---|
+| `GET` | `/leaderboard` | Top 50 streamers ranked by Karma score (`?limit=` max 100) |
+| `GET` | `/search?q=` | Search tokens and streamers by name, symbol, or wallet |
+| `GET` | `/clips/recent` | Latest public stream clips with token info and video links |
+| `GET` | `/token/:tokenAddress` | On-chain token data + live stream status and viewer count |
 
 ### Example Responses
 
